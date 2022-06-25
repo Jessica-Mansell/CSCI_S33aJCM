@@ -9,25 +9,49 @@ body {
 #middle {
     display: flex;
     flex: 1;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#main {
+    padding: 20px;
+    margin-top: 200px;
 }
 
 #main > middle {
     flex: 1;
 }
 
+header {
+    height: 10vh;
+    padding: 1em;
+    align-items: flex-end;
+}
+
+a:link {
+    float: right;
+}
+
 
 .center {
-    padding-top: 300px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 92px;
-    width: 272px;
+    display: flex;
+    float: none;
+}
+
+form {
+    flex: auto;
+
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
 }
 
 input[type=text] {
     text-align: center;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 44px;
