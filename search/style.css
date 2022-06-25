@@ -12,7 +12,7 @@ body {
     float: none;
     margin-left: auto;
     margin-right: auto;
-
+    min-height: auto;
 }
 
 #main {
@@ -30,8 +30,14 @@ header {
     align-items: flex-end;
 }
 
-a:link {
+a:link, a:visited {
     float: right;
+    padding-right: 15px;
+    vertical-align: middle;
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
 }
 
 
@@ -43,11 +49,11 @@ a:link {
 }
 
 form {
-    flex: auto;
-
     justify-content: center;
     align-items: center;
     padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input[type=text] {
@@ -74,15 +80,18 @@ input[type=text] {
 }
 
 input[type=submit] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
     color: #3c4043;
     font-family: Roboto,arial,sans-serif;
     font-size: 14px;
-    margin: 11px 4px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 16px;
-    line-height: 27px;
     height: 36px;
     min-width: 54px;
     text-align: center;
