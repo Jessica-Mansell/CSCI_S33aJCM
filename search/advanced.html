@@ -6,13 +6,23 @@
         <title>Google Advanced Search</title>
     </head>
     <body>
-        <header>            
-            <a class="image-search" href="image.html" target="_top">Images</a>
-            <a class="adv-search" href="index.html" target="_top">Google Search</a>
-        </header>
-        <div id="main">
-            <image class="small-logo" alt="Google Search" height="24" src="/images/googlelogo_clr_74x24px.svg" width="74">
+        <header>   
+            <image class="img" src="googlelogo_clr_74x24px.png" width="74" height="24" alt="Google Search" usemap="#googlelogo_clr_74x24px_Map">
+                <map name="googlelogo_clr_74x24px_Map">
+                <area shape="rect" alt="" coords="62,6,73,18" href="https://google.com">
+                <area shape="rect" alt="" coords="58,0,61,18" href="https://google.com">
+                <area shape="rect" alt="" coords="32,6,44,18" href="https://google.com">
+                <area shape="rect" alt="" coords="45,6,56,23" href="https://google.com">
+                <area shape="rect" alt="" coords="19,6,31,18" href="https://google.com">
+                <area shape="rect" alt="" coords="0,0,18,18" href="https://google.com">
+                </map>   
+                <a class="image-search" href="image.html" target="_top" float="right" vertical-align="middle" margin="20" padding="5">Images</a>
+            </header>
+        <div id="adv-bar">
+            <label style="margin-left: 10px">Advanced Search</label>
+            <div id="line"></div>
             <div id="middle">
+
                 <form action="https://www.google.com/advanced_search">
                     <input type="text" name="q">
                 </form>
