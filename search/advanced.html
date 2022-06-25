@@ -21,13 +21,19 @@
         <div id="adv-bar">
             <label style="margin-left: 10px">Advanced Search</label>
             <div id="line"></div>
-            <div id="middle">
-
-                <form action="https://www.google.com/advanced_search">
-                    <input type="text" name="q">
-                </form>
+                <div class="outside">
+                    <form action="https://www.google.com/search?as_q" id="base" method="GET" name="f">
+                        <div class="lead-in">
+                            <span>Find pages with...</span>
+                        </div>
+                        <div class="firsttext">
+                            <label for="firstbox"> all these words:</label>
+                        </div>
+                        <div class="firstbox">
+                            <input type="text" name="as_q" value autofocus="autofocus">
+                        </div>
+                    </form>
             </div>
-            <input type="submit" value="Google Search">
         </div>
     </body>
 </html>
