@@ -79,6 +79,29 @@ form {
     max-width: 584px;
 }
 
+input#imagesrc.images {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    position: relative;
+    background: #fff;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    max-width: 584px;
+}
+
 #homesub.homebutton {
     display: flex;
     flex-direction: column;
@@ -97,6 +120,27 @@ form {
     text-align: center;
     cursor: pointer;
     user-select: none;
+}
+
+input#imagesub.imagesbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 15px;
 }
 
 img {
