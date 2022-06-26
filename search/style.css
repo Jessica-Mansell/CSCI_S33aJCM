@@ -41,7 +41,7 @@ a:link, a:visited {
 }
 
 
-.center {
+.center-bar {
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -102,9 +102,19 @@ input#imagesrc.images {
     max-width: 584px;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-items: center;
+}
+
 #homesub.homebutton {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
@@ -112,14 +122,31 @@ input#imagesrc.images {
     color: #3c4043;
     font-family: Roboto,arial,sans-serif;
     font-size: 14px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0 16px;
     height: 36px;
     min-width: 54px;
     text-align: center;
     cursor: pointer;
     user-select: none;
+    margin: 5px;
+}
+
+input#luckybutton {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin: 5px;
 }
 
 input#imagesub.imagesbutton {

@@ -12,13 +12,18 @@
             <a class="adv-search" href="advanced.html" target="_top">Advanced Search</a>
         </header>
         <div id="main">
-            <image class="center" alt="Google Search" height="92" src="images/googlelogo_color_272x92dp.png" width="272">
+            <image class="center-bar" alt="Google Search" height="92" src="images/googlelogo_color_272x92dp.png" width="272">
             <div id="middle">
-                <form action="https://google.com/search">
-                    <input class="rounded" id="homesrc" name="q" type="text">
+                <form action="https://google.com/search" method="GET" role="search">
+                    <input class="rounded" id="homesrc" name="q" type="text">     
+                    <div class="button-block">
+                        <div class="center">
+                            <input class="homebutton" id="homesub" name="btnK"type="submit" value="Google Search" role="button">
+                            <input id="luckybutton" value="I'm Feeling Lucky" name="btnI" role="button" tabindex="0" type="submit">
+                        </div>
+                    </div>
                 </form>
             </div>
-            <input class="homebutton" id="homesub" type="submit" value="Google Search">
         </div>
     </body>
 </html>
