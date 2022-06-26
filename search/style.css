@@ -128,7 +128,7 @@ img {
     width: 100%;
     clear: both;
     display: block;
-    margin: 0;
+    margin: 25px;
     padding: 0;
     border: 0;
     font-family: arial, sans-serif;
@@ -138,6 +138,7 @@ img {
     height: 30px;
     display: table-cell;
     vertical-align: middle;
+    padding-bottom: 25px;
 }
 
 span {
@@ -149,10 +150,86 @@ span {
     font-family: arial,sans-serif;
 }
 
-.first-text {
+label {
+    cursor: default;
+}
 
+.first-text {
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    height: 42px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+    vertical-align: middle;
 }
 
 .first-box {
 
+}
+
+#box1 {
+
+}
+
+.second-text {
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    height: 42px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+.second-box {
+
+}
+
+#box2 {
+
+}
+
+.third-text {
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    height: 42px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+.third-box {
+
+}
+
+#box3 {
+
+}
+
+.fourth-text {
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    height: 42px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+.fourth-box {
+
+}
+
+#box4 {
+    
 }
