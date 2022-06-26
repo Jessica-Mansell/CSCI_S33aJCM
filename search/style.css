@@ -123,3 +123,36 @@ img {
     border-bottom-style: solid;
     border-bottom-color: rgb(235, 235, 235);
 }
+
+.outside {
+    width: 100%;
+    clear: both;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: arial, sans-serif;
+}
+
+.lead-in {
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+span {
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-family: arial,sans-serif;
+}
+
+.first-text {
+
+}
+
+.first-box {
+
+}

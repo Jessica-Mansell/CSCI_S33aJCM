@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Google Advanced Search</title>
     </head>
+
+    
     <body>
+
         <header>   
             <image class="img" src="googlelogo_clr_74x24px.png" width="74" height="24" alt="Google Search" usemap="#googlelogo_clr_74x24px_Map">
                 <map name="googlelogo_clr_74x24px_Map">
@@ -17,23 +20,48 @@
                 <area shape="rect" alt="" coords="0,0,18,18" href="https://google.com">
                 </map>   
                 <a class="image-search" href="image.html" target="_top" float="right" vertical-align="middle" margin="20" padding="5">Images</a>
-            </header>
+        </header>
+
         <div id="adv-bar">
             <label style="margin-left: 10px">Advanced Search</label>
             <div id="line"></div>
+        </div>
                 <div class="outside">
                     <form action="https://www.google.com/search?as_q" id="base" method="GET" name="f">
                         <div class="lead-in">
                             <span>Find pages with...</span>
                         </div>
-                        <div class="firsttext">
-                            <label for="firstbox"> all these words:</label>
+                        <div class="first-text">
+                            <label for="box1">all these words:</label>
                         </div>
-                        <div class="firstbox">
-                            <input type="text" name="as_q" value autofocus="autofocus">
+                        <div class="first-box">
+                            <input class="advanced-box" value autofocus="autofocus" id="box1" name="as_q"  type="text">
+                        </div>
+                        <div class="second_text">
+                            <label for="box2">this exact word or phrase</label>
+                        </div>
+                        <div class="second-box">
+                            <input class="advanced-box" value id="box2" name="as_epq" type="text">
+                        </div>
+                        <div class="third-text">
+                            <label for="box3">any of these words</label>
+                        </div>
+                        <div class="third-box">
+                            <input class="advanced-box" value id="box3" name="as_oq" type="text">
+                        </div>
+                        <div class="fourth-text">
+                            <label for="box4">none of these words</label>
+                        </div>
+                        <div class="fourth-box">
+                            <input class="advanced-box" value id="box4" name="as_eq" type="text">
                         </div>
                     </form>
+                </div>
+
             </div>
         </div>
+
     </body>
+
+
 </html>
