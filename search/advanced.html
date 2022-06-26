@@ -27,33 +27,54 @@
             <div id="line"></div>
         </div>
                 <div class="outside">
-                    <form action="https://www.google.com/search?as_q" id="base" method="GET" name="f">
+                    <form action="https://www.google.com/advanced_search">
                         <div class="lead-in">
                             <span>Find pages with...</span>
                         </div>
-                        <div class="first-text">
-                            <label for="box1">all these words:</label>
+                        
+                        <div class="first-wrap">
+                            <div class="first-text">
+                                <label>all these words:</label>
+                            </div>
+                            <div class="first-box">
+                                <input class="advanced-box" value autofocus="autofocus" name="as_q"  type="text" placeholder="Type the important words...">
+                            </div>
                         </div>
-                        <div class="first-box">
-                            <input class="advanced-box" value autofocus="autofocus" id="box1" name="as_q"  type="text">
+
+                        <div class="second-wrap">
+                            <div class="second-text">
+                                <label>this exact word or phrase</label>
+                            </div>
+                            <div class="second-box">
+                                <input class="advanced-box" name="as_epq" type="text" placeholder="Put exact words in quotes...">
+                            </div>
                         </div>
-                        <div class="second-text">
-                            <label for="box2">this exact word or phrase</label>
+
+                        <div class="third-wrap">
+                            <div class="third-text">
+                                <label>any of these words</label>
+                            </div>
+                            <div class="third-box">
+                                <input class="advanced-box" name="as_oq" type="text" placeholder="Type OR between all the words you want...">
+                            </div>
                         </div>
-                        <div class="second-box">
-                            <input class="advanced-box" value id="box2" name="as_epq" type="text">
+
+                        <div class="fourth-wrap">
+                            <div class="fourth-text">
+                                <label>none of these words</label>
+                            </div>
+                            <div class="fourth-box">
+                                <input class="advanced-box" name="as_eq" type="text" placeholder="Put a minus sign just before words you don't want...">
+                            </div>
                         </div>
-                        <div class="third-text">
-                            <label for="box3">any of these words</label>
-                        </div>
-                        <div class="third-box">
-                            <input class="advanced-box" value id="box3" name="as_oq" type="text">
-                        </div>
-                        <div class="fourth-text">
-                            <label for="box4">none of these words</label>
-                        </div>
-                        <div class="fourth-box">
-                            <input class="advanced-box" value id="box4" name="as_eq" type="text">
+
+                        <div class="button-wrap">
+                            <div class="empty">
+                                <label></label>
+                            </div>
+                            <div class="empty-box">
+                                <input class="blue-button" type="submit" value="Advanced Search">
+                            </div>
                         </div>
                     </form>
                 </div>
