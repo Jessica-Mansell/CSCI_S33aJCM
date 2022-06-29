@@ -9,7 +9,16 @@ def index(request):
     }),
 
 def css(request):
-    return render(request, "encyclopedia/css.html", {
-        "entries": util.list_entries()
-    })
+    return render(request, "css.html"),
 
+def django(request):
+    return render(request, "django.html"),
+
+def git(request):
+    return render(request, "git.html"),
+
+def html(request):
+    return render(request, "html.html"),
+
+def python(request):
+    return render(request, "python.html")
