@@ -9,16 +9,16 @@ def index(request):
     }),
 
 def css(request):
-    return render(request, "css.html"),
+    return render(request, "encyclopedia/css.html"),
 
 def django(request):
-    return render(request, "django.html"),
+    return render(request, "encyclopedia/django.html"),
 
 def git(request):
-    return render(request, "git.html"),
+    return render(request, "encyclopedia/git.html"),
 
 def html(request):
-    return render(request, "html.html"),
+    return render(request, "encyclopedia/html.html"),
 
 def python(request):
-    return render(request, "python.html")
+    return render(request, "encyclopedia/python.html")
