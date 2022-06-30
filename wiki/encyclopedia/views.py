@@ -13,4 +13,11 @@ def index(request):
         "entries": util.list_entries()
     })
 
+def info_page(request):
+    context = {"entries": title}
+    return render(request, "encyclopedia/info_page.html", context)
 
+def convert(request):
+    return render(request, "encyclopedia/info_page.html", {
+        "content": markdown2.markdown(util.get_entry(title)), "title": title
+    })
