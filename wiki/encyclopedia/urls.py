@@ -1,10 +1,9 @@
-from django.urls import path, include
+from django.urls import path
 from django.contrib import admin
-
 
 from . import views
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('entries/<str:title>', views.info_page, name="title")
+    path("wiki/<str:title>", views.link_page, name="entrypage"),
 ]
