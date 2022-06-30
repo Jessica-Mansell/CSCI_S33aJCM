@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ wiki:title }}</h1>
+
+    <div>
+        <textarea name="content" rows="10" cols="10" readonly>
+            {{ content|safe }}
+        </textarea>
+    </div>
+
+{% endblock %}

@@ -1,24 +1,21 @@
+from turtle import title
 from django.shortcuts import render
 
-from . import util
+import markdown2
 
+from . import util
 
 def index(request):
     return render(request, "encyclopedia/index.html", {
         "entries": util.list_entries()
-    }),
+    })
 
-def css(request):
-    return render(request, "encyclopedia/css.html"),
+def info_page(request):
+    context = {"title" : title}
+    return render(request, "encyclopedia/info_page.html", context)
 
-def django(request):
-    return render(request, "encyclopedia/django.html"),
+def convert(request):
+    return render(request, "entries/{title}.md",{
+        "content": markdown2.markdown(util.get_entry(title)), "title": title
+    })
 
-def git(request):
-    return render(request, "encyclopedia/git.html"),
-
-def html(request):
-    return render(request, "encyclopedia/html.html"),
-
-def python(request):
-    return render(request, "encyclopedia/python.html")
