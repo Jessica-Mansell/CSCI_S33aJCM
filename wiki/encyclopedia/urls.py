@@ -8,5 +8,5 @@ app_name ="wiki"
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('<str:title>', views.info_page, name="title")
+    path('', views.info_page, name="title")
 ]
